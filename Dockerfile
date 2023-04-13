@@ -1,5 +1,11 @@
 FROM php:7.0-apache
 
+ENV RSS_ADMIN_USER rss
+ENV RSS_ADMIN_PASSWORD abc123
+ENV RSS_API_KEY B8CGzp88Jf
+ENV RSS_CRON_SITE 66cdcaf030bd5f690c7d00997e0168957bff6642
+ENV RSS_CRON "17 19 * * * /home/www/site-specific.sh >>/tmp/site-specific.log 2>&1"
+
 RUN   apt-get update && \
       apt-get -y install --no-install-recommends \
       libtidy-dev \
