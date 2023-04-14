@@ -1,3 +1,3 @@
-*/5 * * * * /home/www/site-specific.sh >>/tmp/site-specific.log 2>&1
+36 18 * * * /home/www/site-specific.sh >>/tmp/site-specific.log 2>&1
 @reboot /bin/bash /home/www/reboot.sh >>/tmp/reboot.log 2>&1
 @reboot /home/www/env.sh >> /tmp/env.log 2>&1
