@@ -7,6 +7,5 @@ services:
     ports:
       - 8080:80
     volumes:
-      - ./config/site-specific.sh:/home/www/site-specific.sh
-      - ./config/custom_config.php:/home/www/custom_config.php
-      - ./site:/var/www/html/site_config
+      - ./local/site:/var/www/html/site_config
+      - ./local/cache:/var/www/html/cache
